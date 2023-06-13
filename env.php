@@ -1,11 +1,9 @@
 <?php
 return [
-    'database' => [
-        'host' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'dbname' => 'q'
-    ]
+    'host' => 'localhost',
+    'user' => 'root',
+    'password' => '',
+    'dbName' => 'q'
 ];
 
 
