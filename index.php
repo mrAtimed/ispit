@@ -7,13 +7,11 @@ spl_autoload_register(function ($className) {
     }
 });
 
+$path = __DIR__ . '/env.php';
+$configManager = new ConfigLoader($path);
+$dbConnection = DB::getInstance();
+$mysql = $dbConnection->getConnection();
 
-$db = DB::getInstance();
-
-$mysqli = $db->getConnection();
-
-if ($mysqli) {
+if ($mysql) {
     echo 'Dela!';
-} else {
-    echo 'E jeb*ga!';
 }
